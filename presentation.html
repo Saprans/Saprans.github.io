@@ -1,0 +1,47 @@
+<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="styles.css"><title>HTML, CSS және GitHub — презентация</title><style>body{background:#e7eae1}.deck-header{padding:20px 30px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}.deck{max-width:1160px;margin:24px auto;padding:0 24px}.slide{background:#f6f5ef;min-height:590px;padding:55px 65px;position:relative;margin-bottom:25px}.slide[hidden]{display:none}.slide h1{font-size:45px;line-height:1.2;max-width:950px;letter-spacing:-1.5px;margin:15px 0 35px;font-weight:500}.slide p{font-size:22px;white-space:pre-line;line-height:1.6;max-width:920px}.slide pre{font:18px/1.7 Consolas,monospace;background:#183b33;color:#eef1de;padding:25px;overflow:auto;white-space:pre-wrap;margin-top:30px}.slide .accent{font-size:20px;color:#476445;margin-top:35px}.slide .source{font-size:10px;color:#65766c;word-break:break-all}.slide .kicker{font-size:11px;letter-spacing:2px}.slide.cover{background:#183b33;color:#f6f5ef}.cover h1{font-size:64px;max-width:720px;margin-top:60px}.cover .sub{font-size:26px}.cover .author{font-size:17px;margin-top:50px}.controls{display:flex;justify-content:space-between;align-items:center;padding:0 24px 30px;max-width:1160px;margin:auto;gap:14px}.controls button{padding:12px 22px;border:1px solid #a6b0a1;color:#183b33;background:#f6f5ef;cursor:pointer;font:inherit;font-size:13px}.controls button:disabled{opacity:.4;cursor:default}.controls span{font-size:12px}.deck-footer{font-size:11px;text-align:center;margin-bottom:25px}@media(max-width:700px){.deck{padding:0 12px;margin-top:8px}.slide{padding:28px 23px;min-height:570px}.slide h1{font-size:32px;letter-spacing:-.5px}.slide p{font-size:17px}.slide pre{font-size:13px;padding:16px}.cover h1{font-size:43px}.cover .sub{font-size:22px}.controls{padding-inline:12px}.controls button{padding:10px 15px}.deck-header{padding:20px}.slide .accent{font-size:17px}}@media print{.deck-header,.controls,.deck-footer{display:none}.deck{padding:0;margin:0;max-width:none}.slide[hidden]{display:block}.slide{min-height:0;break-after:page;margin:0;padding:25px}.slide pre{color:#183b33;background:#efefef}.slide.cover{background:white;color:#183b33}@page{size:A4 landscape;margin:1cm}}</style></head><body><header class="deck-header"><a href="index.html">← Портфолиоға оралу</a><a href="files/12_1_HTML_CSS_GitHub.pptx" download>PowerPoint жүктеу ↓</a></header><main class="deck" aria-label="Презентация"><section class="slide cover" aria-label="1-слайд"><p class="kicker">12.1 ТАПСЫРМА / 01</p><h1>HTML, CSS және GitHub</h1><p class="sub">Жеке веб-сайт жасау және электрондық портфолио</p><p class="author">Тұрсын Жантас Думанұлы
+Абай атындағы ҚазҰПУ, 2-курс
+АКТ пәні · 12.1 тапсырма · 2026</p></section><section class="slide" aria-label="2-слайд"><p class="kicker">12.1 ТАПСЫРМА / 02</p><h1>Жеке сайттың мақсаты</h1><p class="body">Өзім туралы мәлімет пен оқу жұмыстарымды бір жерде көрсету.
+
+Оқытушыға презентацияны және эссені сілтеме арқылы ұсыну.
+
+Көлсайдағы далалық тәжірибем туралы ой бөлісу.</p><p class="accent">Электрондық портфолио оқу нәтижелерін жүйелейді.</p></section><section class="slide" aria-label="3-слайд"><p class="kicker">12.1 ТАПСЫРМА / 03</p><h1>HTML — беттің құрылымы</h1><p class="body">HTML — веб-беттің мазмұнын белгілейтін тіл.
+
+&lt;h1&gt; негізгі тақырыпты береді. &lt;p&gt; мәтін абзацын жасайды. &lt;a&gt; басқа бетке немесе файлға сілтейді.</p><pre><code>&lt;h1&gt;Сәлем, мен Жантаспын.&lt;/h1&gt;
+&lt;p&gt;ҚазҰПУ-дың 2-курс студентімін.&lt;/p&gt;
+&lt;a href=&quot;essay.html&quot;&gt;Эссені оқу&lt;/a&gt;</code></pre><p class="source">Дереккөз: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax</p></section><section class="slide" aria-label="4-слайд"><p class="kicker">12.1 ТАПСЫРМА / 04</p><h1>CSS — беттің көрінісі</h1><p class="body">CSS HTML элементтерінің сыртқы көрінісін реттейді.
+
+Қаріп, түс, арақашықтық және бағандардың орналасуы CSS арқылы беріледі. Media query шағын экранға бейімдейді.</p><pre><code>.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; }
+}</code></pre><p class="source">Дереккөз: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS</p></section><section class="slide" aria-label="5-слайд"><p class="kicker">12.1 ТАПСЫРМА / 05</p><h1>Git және GitHub</h1><p class="body">Git файлдардағы өзгерістер тарихын сақтайды. Commit белгілі бір өзгерісті тіркейді.
+
+GitHub Git репозиторийлерін интернетте сақтауға және ортақ жұмыс жүргізуге мүмкіндік береді.
+
+Менің сайт кодым: Saprans/Saprans.github.io</p><p class="accent">Git — нұсқаларды басқару құралы.
+GitHub — жобалармен жұмыс істеу платформасы.</p><p class="source">Дереккөз: https://docs.github.com/en/get-started/start-your-journey/what-is-github</p></section><section class="slide" aria-label="6-слайд"><p class="kicker">12.1 ТАПСЫРМА / 06</p><h1>GitHub Pages — сайтты жариялау</h1><p class="body">GitHub Pages репозиторийдегі HTML, CSS және JavaScript файлдарынан статикалық сайт жариялайды.
+
+Бұл портфолиоға серверлік дерекқор қажет емес. Браузер беттерді және жүктелетін оқу файлдарын ашады.</p><p class="accent">Репозиторий: Saprans.github.io
+Басты файл: index.html</p><p class="source">Дереккөз: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages</p></section><section class="slide" aria-label="7-слайд"><p class="kicker">12.1 ТАПСЫРМА / 07</p><h1>Менің портфолиомның құрылымы</h1><p class="body">Мен туралы бөлімінде аты-жөнім, оқу орным және курсым берілген.
+
+Тәжірибе бөлімі Көлсайдағы далалық практикаға арналған.
+
+Оқу жұмыстары бөлімінен 12.1 презентациясы мен 13.2 эссесін ашуға болады.</p><p class="accent">index.html — басты бет
+styles.css — дизайн
+files/ — Word және PowerPoint</p></section><section class="slide" aria-label="8-слайд"><p class="kicker">12.1 ТАПСЫРМА / 08</p><h1>Эссе және далалық тәжірибе</h1><p class="body">13.2 эссе тақырыбы: «Менің білім жолым және цифрлық портфолиом».
+
+Негізгі мәтін — 379 сөз. Эссе ҚазҰПУ-дағы оқуымды, Көлсай тәжірибесін және цифрлық дағдыларды байланыстырады.
+
+Сайтта онлайн оқу нұсқасы және титул беті бар Word құжаты орналасқан.</p><p class="accent">Эссе оқу тәжірибесі туралы жеке ойды жеткізеді.</p></section><section class="slide" aria-label="9-слайд"><p class="kicker">12.1 ТАПСЫРМА / 09</p><h1>Сайтты жариялау реті</h1><p class="body">1. index.html және styles.css файлдарын дайындау.
+
+2. Презентация мен эссені қосып, сілтемелерді тексеру.
+
+3. Файлдарды GitHub репозиторийіне сақтау.
+
+4. GitHub Pages жариялауын тексеріп, сайт сілтемесін ұсыну.</p><p class="source">Дереккөз: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site</p></section><section class="slide" aria-label="10-слайд"><p class="kicker">12.1 ТАПСЫРМА / 10</p><h1>Нәтиже және дереккөздер</h1><p class="body">HTML сайттың құрылымын жасайды, CSS оның көрінісін реттейді. Git өзгерістер тарихын сақтайды, GitHub кодты жинақтайды, ал Pages сайтты жариялайды.
+
+Нәтиже: өзім туралы сайт, оқу презентациясы және портфолиодағы эссе.</p><p class="accent">MDN Web Docs — HTML және CSS
+GitHub Docs — Git, GitHub және Pages</p><p class="source">Дереккөз: https://developer.mozilla.org/
+https://docs.github.com/</p></section></main><nav class="controls" aria-label="Слайдтарды басқару"><button id="prev" type="button">← Алдыңғы</button><span id="position" aria-live="polite">1 / 10</span><button id="next" type="button">Келесі →</button></nav><p class="deck-footer">Пернетақтадағы ← және → пернелерімен де ауыстыруға болады.</p><script>const slides=[...document.querySelectorAll('.slide')];let current=0;const prev=document.querySelector('#prev'),next=document.querySelector('#next'),position=document.querySelector('#position');function show(n){current=Math.min(Math.max(n,0),slides.length-1);slides.forEach((s,i)=>s.hidden=i!==current);prev.disabled=current===0;next.disabled=current===slides.length-1;position.textContent=`${current+1} / ${slides.length}`;history.replaceState(null,'','#'+(current+1));}prev.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();show(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();show(current-1)}});show((parseInt(location.hash.slice(1),10)||1)-1);</script></body></html>
